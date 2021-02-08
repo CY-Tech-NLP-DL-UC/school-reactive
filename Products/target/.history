@@ -1,0 +1,31 @@
+run
+~run
+exit$
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+last compile:run
+~run
+exit
+~run
+run
+run -deprecation
+showDiscoveredMainClasses
+show DiscoveredMainClasses
+show discoveredMainClasses
+exit

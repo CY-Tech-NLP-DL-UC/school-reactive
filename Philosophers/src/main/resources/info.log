@@ -1,0 +1,74 @@
+2021-02-08  INFO [philosophersSystem-akka.actor.default-dispatcher-6] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-02-08 09:46:22.692UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Supervisor - Supervisor registers philosopher 0
+2021-02-08 09:46:22.693UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Supervisor - Supervisor registers philosopher 1
+2021-02-08 09:46:22.693UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Supervisor - Supervisor registers philosopher 2
+2021-02-08 09:46:22.693UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Supervisor - Supervisor registers philosopher 3
+2021-02-08 09:46:22.693UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Supervisor - Supervisor registers philosopher 4
+2021-02-08 09:46:22.695UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Philosopher - Philosopher 0 starts to think
+2021-02-08 09:46:22.695UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Philosopher - Philosopher 1 starts to think
+2021-02-08 09:46:22.699UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Supervisor - Registration complete
+2021-02-08 09:46:22.703UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Philosopher - Philosopher 3 starts to think
+2021-02-08 09:46:22.703UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Philosopher - Philosopher 4 starts to think
+2021-02-08 09:46:22.703UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Philosopher - Philosopher 2 starts to think
+2021-02-08 09:46:23.397UTC INFO [philosophersSystem-akka.actor.default-dispatcher-11] Philosopher - Philosopher 3 is now waiting
+2021-02-08 09:46:23.401UTC INFO [philosophersSystem-akka.actor.default-dispatcher-11] Philosopher - Philosopher 3 starts eating
+2021-02-08 09:46:26.232UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 2 is now waiting
+2021-02-08 09:46:26.786UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 4 is now waiting
+2021-02-08 09:46:27.159UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 0 is now waiting
+2021-02-08 09:46:27.159UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 0 starts eating
+2021-02-08 09:46:29.239UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 1 is now waiting
+2021-02-08 09:46:32.810UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 3 finished eating
+2021-02-08 09:46:32.811UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 2 starts eating
+2021-02-08 09:46:35.105UTC INFO [philosophersSystem-akka.actor.default-dispatcher-7] Philosopher - Philosopher 0 finished eating
+2021-02-08 09:46:35.105UTC INFO [philosophersSystem-akka.actor.default-dispatcher-7] Philosopher - Philosopher 4 starts eating
+2021-02-08 09:46:36.029UTC INFO [philosophersSystem-akka.actor.default-dispatcher-7] Philosopher - Philosopher 4 finished eating
+2021-02-08 09:46:42.716UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Philosopher - Philosopher 2 finished eating
+2021-02-08 09:46:42.716UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Philosopher - Philosopher 1 starts eating
+2021-02-08 09:46:44.576UTC INFO [philosophersSystem-akka.actor.default-dispatcher-9] Philosopher - Philosopher 1 finished eating
+2021-02-08  INFO [monkSystem-akka.actor.default-dispatcher-4] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-02-08 09:47:04.378UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 1 starts to think
+2021-02-08 09:47:04.380UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 0 starts to think
+2021-02-08 09:47:04.380UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 3 starts to think
+2021-02-08 09:47:04.389UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 2 starts to think
+2021-02-08 09:47:04.389UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 4 starts to think
+2021-02-08 09:47:04.750UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 1 is now hungry
+2021-02-08 09:47:04.771UTC INFO [monkSystem-akka.actor.default-dispatcher-7] Monk - Monk 1 got his right hashi
+2021-02-08 09:47:04.777UTC INFO [monkSystem-akka.actor.default-dispatcher-7] Monk - Monk 1 has picked up Actor[akka://monkSystem/user/Hashi-2#4755283] and starts to eat
+2021-02-08 09:47:05.118UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 3 is now hungry
+2021-02-08 09:47:05.120UTC INFO [monkSystem-akka.actor.default-dispatcher-4] Monk - Monk 3 got his right hashi
+2021-02-08 09:47:05.120UTC INFO [monkSystem-akka.actor.default-dispatcher-4] Monk - Monk 3 has picked up Actor[akka://monkSystem/user/Hashi-4#1733872584] and starts to eat
+2021-02-08 09:47:06.478UTC INFO [monkSystem-akka.actor.default-dispatcher-4] Monk - Monk 3 finished eating
+2021-02-08 09:47:06.560UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 4 is now hungry
+2021-02-08 09:47:06.561UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 4 got his left hashi
+2021-02-08 09:47:06.561UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 4 has picked up Actor[akka://monkSystem/user/Hashi-4#1733872584] and starts to eat
+2021-02-08 09:47:06.895UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 2 is now hungry
+2021-02-08 09:47:06.896UTC INFO [monkSystem-akka.actor.default-dispatcher-10] Monk - Monk 2 got his left hashi
+2021-02-08 09:47:06.898UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 2 puts down Actor[akka://monkSystem/user/Hashi-3#-1788096229]
+2021-02-08 09:47:06.901UTC INFO [monkSystem-akka.actor.default-dispatcher-7] Monk - Monk 2 starts to think
+2021-02-08 09:47:06.910UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 0 is now hungry
+2021-02-08 09:47:06.912UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 0 was not allowed to pick up Actor[akka://monkSystem/user/Hashi-1#1677269077]
+2021-02-08 09:47:06.917UTC INFO [monkSystem-akka.actor.default-dispatcher-7] Monk - Monk 0 starts to think
+2021-02-08 09:47:07.938UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 0 is now hungry
+2021-02-08 09:47:07.939UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 0 was not allowed to pick up Actor[akka://monkSystem/user/Hashi-0#-1974365585]
+2021-02-08 09:47:07.940UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 0 starts to think
+2021-02-08 09:47:09.306UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 1 finished eating
+2021-02-08 09:47:09.703UTC INFO [monkSystem-akka.actor.default-dispatcher-6] Monk - Monk 2 is now hungry
+2021-02-08 09:47:09.704UTC INFO [monkSystem-akka.actor.default-dispatcher-6] Monk - Monk 2 got his left hashi
+2021-02-08 09:47:09.705UTC INFO [monkSystem-akka.actor.default-dispatcher-6] Monk - Monk 2 has picked up Actor[akka://monkSystem/user/Hashi-2#4755283] and starts to eat
+2021-02-08 09:47:09.734UTC INFO [monkSystem-akka.actor.default-dispatcher-6] Monk - Monk 0 is now hungry
+2021-02-08 09:47:09.736UTC INFO [monkSystem-akka.actor.default-dispatcher-6] Monk - Monk 0 was not allowed to pick up Actor[akka://monkSystem/user/Hashi-0#-1974365585]
+2021-02-08 09:47:09.737UTC INFO [monkSystem-akka.actor.default-dispatcher-6] Monk - Monk 0 starts to think
+2021-02-08 09:47:10.281UTC INFO [monkSystem-akka.actor.default-dispatcher-10] Monk - Monk 0 is now hungry
+2021-02-08 09:47:10.282UTC INFO [monkSystem-akka.actor.default-dispatcher-5] Monk - Monk 0 got his left hashi
+2021-02-08 09:47:10.282UTC INFO [monkSystem-akka.actor.default-dispatcher-5] Monk - Monk 0 puts down Actor[akka://monkSystem/user/Hashi-1#1677269077]
+2021-02-08 09:47:10.282UTC INFO [monkSystem-akka.actor.default-dispatcher-5] Monk - Monk 0 starts to think
+2021-02-08 09:47:11.742UTC INFO [monkSystem-akka.actor.default-dispatcher-5] Monk - Monk 0 is now hungry
+2021-02-08 09:47:11.743UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 0 got his left hashi
+2021-02-08 09:47:11.743UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 0 puts down Actor[akka://monkSystem/user/Hashi-1#1677269077]
+2021-02-08 09:47:11.743UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 0 starts to think
+2021-02-08 09:47:12.831UTC INFO [monkSystem-akka.actor.default-dispatcher-8] Monk - Monk 2 finished eating
+2021-02-08 09:47:13.119UTC INFO [monkSystem-akka.actor.default-dispatcher-5] Monk - Monk 4 finished eating
+2021-02-08 09:47:13.772UTC INFO [monkSystem-akka.actor.default-dispatcher-9] Monk - Monk 0 is now hungry
+2021-02-08 09:47:13.773UTC INFO [monkSystem-akka.actor.default-dispatcher-9] Monk - Monk 0 got his right hashi
+2021-02-08 09:47:13.773UTC INFO [monkSystem-akka.actor.default-dispatcher-9] Monk - Monk 0 has picked up Actor[akka://monkSystem/user/Hashi-1#1677269077] and starts to eat
+2021-02-08 09:47:16.652UTC INFO [monkSystem-akka.actor.default-dispatcher-9] Monk - Monk 0 finished eating

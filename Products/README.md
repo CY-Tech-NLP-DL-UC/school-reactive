@@ -1,4 +1,4 @@
-# Reactive Programming
+# Products
 
 ## Table of contents
 * [General info](#general-info)
@@ -7,7 +7,9 @@
 
 ## General info
 
-Reactive Programming Projects: they are developped using akka-scala.
+First project using akka to get in touch with the new technology.
+The goal was to create an Akka Actor called "Shop" and to add/remove/display products from it.
+Then, we had to illustrate Akka Actor's lifecycle.
 
 ## Technologies
 
@@ -19,4 +21,4 @@ This project was created using:
 ## Setup
 
 Please install sbt on your device.
-Then, in desired project, run ```sbt run```.
+Then, run ```sbt run```.

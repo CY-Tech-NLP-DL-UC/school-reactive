@@ -1,0 +1,27 @@
+2021-02-08  INFO [philosophersSystem-akka.actor.default-dispatcher-6] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-02-08 09:46:22.692UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Supervisor - Supervisor registers philosopher 0
+2021-02-08 09:46:22.693UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Supervisor - Supervisor registers philosopher 1
+2021-02-08 09:46:22.693UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Supervisor - Supervisor registers philosopher 2
+2021-02-08 09:46:22.693UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Supervisor - Supervisor registers philosopher 3
+2021-02-08 09:46:22.693UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Supervisor - Supervisor registers philosopher 4
+2021-02-08 09:46:22.695UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Philosopher - Philosopher 0 starts to think
+2021-02-08 09:46:22.695UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Philosopher - Philosopher 1 starts to think
+2021-02-08 09:46:22.699UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Supervisor - Registration complete
+2021-02-08 09:46:22.703UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Philosopher - Philosopher 3 starts to think
+2021-02-08 09:46:22.703UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Philosopher - Philosopher 4 starts to think
+2021-02-08 09:46:22.703UTC INFO [philosophersSystem-akka.actor.default-dispatcher-13] Philosopher - Philosopher 2 starts to think
+2021-02-08 09:46:23.397UTC INFO [philosophersSystem-akka.actor.default-dispatcher-11] Philosopher - Philosopher 3 is now waiting
+2021-02-08 09:46:23.401UTC INFO [philosophersSystem-akka.actor.default-dispatcher-11] Philosopher - Philosopher 3 starts eating
+2021-02-08 09:46:26.232UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 2 is now waiting
+2021-02-08 09:46:26.786UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 4 is now waiting
+2021-02-08 09:46:27.159UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 0 is now waiting
+2021-02-08 09:46:27.159UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 0 starts eating
+2021-02-08 09:46:29.239UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 1 is now waiting
+2021-02-08 09:46:32.810UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 3 finished eating
+2021-02-08 09:46:32.811UTC INFO [philosophersSystem-akka.actor.default-dispatcher-10] Philosopher - Philosopher 2 starts eating
+2021-02-08 09:46:35.105UTC INFO [philosophersSystem-akka.actor.default-dispatcher-7] Philosopher - Philosopher 0 finished eating
+2021-02-08 09:46:35.105UTC INFO [philosophersSystem-akka.actor.default-dispatcher-7] Philosopher - Philosopher 4 starts eating
+2021-02-08 09:46:36.029UTC INFO [philosophersSystem-akka.actor.default-dispatcher-7] Philosopher - Philosopher 4 finished eating
+2021-02-08 09:46:42.716UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Philosopher - Philosopher 2 finished eating
+2021-02-08 09:46:42.716UTC INFO [philosophersSystem-akka.actor.default-dispatcher-8] Philosopher - Philosopher 1 starts eating
+2021-02-08 09:46:44.576UTC INFO [philosophersSystem-akka.actor.default-dispatcher-9] Philosopher - Philosopher 1 finished eating
