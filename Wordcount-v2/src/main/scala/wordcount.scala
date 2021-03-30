@@ -114,7 +114,7 @@ class MasterActor extends FSM[MasterState, MasterData] {
             stay using mdata.copy()
         }
         case Event(WorkerIsAvailable, mdata @ MData(_, _)) => {
-            if (index < segmented_work.size) {
+            if (index < segmented_work.size-1) {
                 var work = segmented_work(index)
                 log.info(s"Send work: $work")
                 sender ! Count(work)
@@ -128,10 +128,11 @@ class MasterActor extends FSM[MasterState, MasterData] {
             if (work_done == segmented_work.size -1){
                 goto(WorkDone) using mdata.copy(data = data_bearer)
             } else {
-                sender ! WorkIsAvailable
+                if (index < segmented_work.size-1) {
+                    sender ! WorkIsAvailable
+                }
                 stay using mdata.copy(data = data_bearer)
             }
-            
         }
     }
 

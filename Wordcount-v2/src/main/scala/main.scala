@@ -14,7 +14,7 @@ object Demo extends App {
       system.actorOf(Props(classOf[MasterActor]),
         "master")
 
-    for (i <- 0 to 0)
+    for (i <- 0 to 3)
     {
         val worker = system.actorOf(Props(classOf[WorkerActor]), "worker_"+i)
         worker ! SetTarget(masterActor)
