@@ -1,4 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/home/eisti/EISTI/ING3/ProgReactive/school-reactive/Rest/src/main/scala/actors.scala:53:66: value ! is not a member of java.io.Serializable[0m
-[0m[[0m[31merror[0m] [0m[0m                                                    ticketSeller ! Buy(tickets)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 10.2.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 2.13.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0m7 deprecations (since 2.13.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0m2 deprecations (since 2.6.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0m11 deprecations in total; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0m5 warnings found[0m
