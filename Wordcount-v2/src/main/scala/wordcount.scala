@@ -68,11 +68,10 @@ class WorkerActor extends FSM[WorkerState, WorkerData]{
     initialize()
 }
 
-class MasterActor extends FSM[MasterState, MasterData] {
+class MasterActor(work_load: Int) extends FSM[MasterState, MasterData] {
 
     var segmented_work = List[List[String]]()
     var index: Int = 0
-    var work_load: Int = 4
     var work_done: Int = 0
 
     startWith(Registration, Empty)

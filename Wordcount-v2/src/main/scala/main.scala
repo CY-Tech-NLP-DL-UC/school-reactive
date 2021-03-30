@@ -10,11 +10,14 @@ object Demo extends App {
     //create the actor system
     val system = ActorSystem("StateMachineSystem")
 
+    var work_load: Int = 6
+    var num_workers: Int = 3
+
     val masterActor =
-      system.actorOf(Props(classOf[MasterActor]),
+      system.actorOf(Props(new MasterActor(work_load)),
         "master")
 
-    for (i <- 0 to 3)
+    for (i <- 0 to num_workers)
     {
         val worker = system.actorOf(Props(classOf[WorkerActor]), "worker_"+i)
         worker ! SetTarget(masterActor)
