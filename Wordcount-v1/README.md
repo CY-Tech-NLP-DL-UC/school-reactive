@@ -1,4 +1,4 @@
-# Philosophers
+# Wordcount-v1
 
 ## Table of contents
 * [General info](#general-info)
