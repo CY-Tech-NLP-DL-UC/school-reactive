@@ -3,6 +3,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [Routes](#routes)
 * [Setup](#setup)
 
 ## General info
@@ -18,6 +19,17 @@ This project was created using:
 
 * Scala 2.13.3
 * Akka 2.6.12
+
+## Routes
+
+Available routes are listed here
+
+|url|methods|description|
+|-|-|-|
+|"/events"|GET|Gets all the available events|
+|"/events/name"|POST|Creates an event based on the name and the tickets provided using json|
+|"/events/name"|DELETE|Deletes an event based on its name|
+|"/events/name/tickets"|GET|Buys tickets from the event name|
 
 ## Setup
 
