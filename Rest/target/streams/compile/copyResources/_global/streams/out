@@ -1,5 +1,5 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/eisti/Documents/courses/reactive_coding/school-reactive/Rest/src/main/resources/error.log,/home/eisti/Documents/courses/reactive_coding/school-reactive/Rest/target/scala-2.13/classes/error.log)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/eisti/Documents/courses/reactive_coding/school-reactive/Rest/src/main/resources/logback.xml,/home/eisti/Documents/courses/reactive_coding/school-reactive/Rest/target/scala-2.13/classes/logback.xml)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/eisti/Documents/courses/reactive_coding/school-reactive/Rest/src/main/resources/info.log,/home/eisti/Documents/courses/reactive_coding/school-reactive/Rest/target/scala-2.13/classes/info.log)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/eisti/Documents/courses/reactive_coding/school-reactive/Rest/src/main/resources/application.conf,/home/eisti/Documents/courses/reactive_coding/school-reactive/Rest/target/scala-2.13/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/eisti/EISTI/ING3/ProgReactive/school-reactive/Rest/src/main/resources/error.log,/home/eisti/EISTI/ING3/ProgReactive/school-reactive/Rest/target/scala-2.13/classes/error.log)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/eisti/EISTI/ING3/ProgReactive/school-reactive/Rest/src/main/resources/logback.xml,/home/eisti/EISTI/ING3/ProgReactive/school-reactive/Rest/target/scala-2.13/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/eisti/EISTI/ING3/ProgReactive/school-reactive/Rest/src/main/resources/info.log,/home/eisti/EISTI/ING3/ProgReactive/school-reactive/Rest/target/scala-2.13/classes/info.log)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/eisti/EISTI/ING3/ProgReactive/school-reactive/Rest/src/main/resources/application.conf,/home/eisti/EISTI/ING3/ProgReactive/school-reactive/Rest/target/scala-2.13/classes/application.conf)[0m

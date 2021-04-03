@@ -1,12 +1,11 @@
 import akka.actor.{ActorSystem, Props}
 import akka.stream.ActorMaterializer
-import scala.concurrent.ExecutionContextExecutor
-import scala.concurrent.Future
+import scala.concurrent.{ExecutionContextExecutor, Future, Await}
 import scala.concurrent.duration._
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Route
 import akka.http.scaladsl.server.Directives._
-import scala.util.{Success, Failure}
+import scala.util.{Try, Success, Failure}
 import akka.pattern.ask
 import akka.util.Timeout
 
@@ -19,52 +18,71 @@ object eventAPI extends App with EventJsonSupport
 
     var restapi = system.actorOf(Props(new RestApiActor(system)))
 
-    // restapi ! CreateEvent("RHCP", 2500)
-    
-    // restapi ! TicketRequest("RHCP", 10)
-
     implicit val timeout: Timeout = 5.seconds // Request time out.
 
     // Routes definition
     val routes: Route =
-        concat(
-            post
-            {
-                path("saveEvent")
+        pathPrefix("events")
+        {
+            concat(
+                pathEnd
                 {
-                    post{entity(as[Event])
-                    {
-                        event => restapi ! CreateEvent(event.name, event.tickets)
-                        complete(event + " has been created.")
-                    }}
-                }
-            },
-            post
-            {
-                path("buyTickets")
+                    concat(
+                        get
+                        {
+                            val events = restapi ? GetAllEvents
+
+                            Try(Await.result(events, 5.seconds)) match
+                            {
+                                case Success(res)   =>  complete(s"$res are available.")
+                                case Failure(e)     =>  complete(s"Timeout : $e")
+                            }
+                        }
+                    )
+                },
+                path(Segment)
                 {
-                    post{entity(as[Event])
-                    {
-                        event => val tickets = restapi ? TicketRequest(event.name, event.tickets)
-                        Thread.sleep(4000)
-                        complete(s"$tickets have been ordered.")
-                        // tickets.onComplete{
-                        //     case Success(t) => complete(s"$t have been ordered.")
-                        //     case Failure(e) => println(s"exception = $e")
-                        // }
-                        
-                    }}
+                    name => 
+                    concat(
+                        post
+                        {
+                            entity(as[Event])
+                            {
+                                event => val newEvent = restapi ? CreateEvent(name, event.tickets)
+                                Try(Await.result(newEvent, 5.seconds)) match
+                                {
+                                    case Success(res)   =>  complete(s"$res has been created.")
+                                    case Failure(e)     =>  complete(s"Timeout : $e")
+                                }
+                            }
+                        },
+                        delete
+                        {
+                            val deletedEvent = restapi ? RemoveEvent(name)
+
+                            Try(Await.result(deletedEvent, 5.seconds)) match
+                            {
+                                case Success(res)   =>  complete(s"$res has been deleted.")
+                                case Failure(e)     =>  complete(s"Timeout : $e")
+                            }
+                        },
+                        path(Segment)
+                        {
+                            tickets =>
+                            get
+                            {
+                                val boughtTickets = restapi ? TicketRequest(name, tickets.toInt)
+                                Try(Await.result(boughtTickets, 5.seconds)) match
+                                {
+                                    case Success(res)   =>  complete(s"Tickets : $res")
+                                    case Failure(e)     =>  complete(s"Timeout : $e")
+                                }
+                            }
+                        }
+                    )
                 }
-            },
-            get
-            {
-                path("events")
-                {
-                    val events = restapi ? GetAllEvents
-                    complete(s"$events are available.")
-                }
-            }
-        )
+            )
+        }
 
     val futureBinding = Http().bindAndHandle(routes, "localhost", 8080)
     futureBinding.onComplete

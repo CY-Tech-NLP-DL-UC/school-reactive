@@ -17,9 +17,12 @@ case object Ticket{
 }
 
 case class TicketVectors(tickets: Vector[Ticket])
+case class EventCreated(name: String, tickets: Int)
+case class EventDeleted(name: String)
 
 // Rest api + Box office actions
 case class CreateEvent(name: String, tickets: Int)
+case class RemoveEvent(name: String)
 case class TicketRequest(name: String, tickets: Int)
 case object GetAllEvents
 
@@ -35,11 +38,21 @@ class RestApiActor(system: ActorSystem) extends Actor with ActorLogging
 
     override def receive: Receive =
     {
-        case CreateEvent(name, tickets) =>  log.info(s"RestAPI asks box office to create the event $name ($tickets)")
-                                            boxOffice ! CreateEvent(name, tickets)  
+        case CreateEvent(name, tickets)     =>  log.info(s"RestAPI asks box office to create the event $name ($tickets)")
+                                                boxOffice ! CreateEvent(name, tickets) 
+                                                origin = sender
+
+        case EventCreated(name, tickets)    =>  log.info("RestAPI acknowledges the event creation")
+                                                origin ! Map("event" -> name, "tickets" -> tickets)
+
+        case RemoveEvent(name)  =>  log.info(s"RestAPI asks box office to remove the event $name")
+                                    boxOffice ! RemoveEvent(name)
+                                    origin = sender
+
+        case EventDeleted(name) =>  log.info("RestAPI acknowledges the event deletion")
+                                    origin ! name
 
         case TicketRequest(name, tickets)   =>  log.info(s"RestAPI asks box office to buy $tickets tickets for $name")
-                                                log.info(s"SENDER: $sender!!!")
                                                 origin = sender
                                                 boxOffice ! TicketRequest(name, tickets)
 
@@ -47,8 +60,9 @@ class RestApiActor(system: ActorSystem) extends Actor with ActorLogging
                                         log.info(s"RestAPI receives $results")
                                         origin ! results
         
-        case GetAllEvents => val events = boxOffice ? GetAllEvents
-                             sender ! events
+        case GetAllEvents =>    val events = boxOffice ? GetAllEvents
+                                log.info("RestAPI asks box office about all available events")
+                                sender ! events
 
         case e => log.warning(s"Warning: RestAPI received $e in receive")
     }
@@ -64,6 +78,11 @@ class BoxOfficeActor(system: ActorSystem) extends Actor with ActorLogging
         case CreateEvent(name, tickets) =>  var ticketSeller = system.actorOf(Props(new TicketSellerActor(sender, tickets)), name)
                                             log.info(s"Box office creates an event $name ($tickets)")
                                             ticketSellers = ticketSellers:+ticketSeller
+                                            sender ! EventCreated(name, tickets)
+
+        case RemoveEvent(name)  =>  ticketSellers = ticketSellers.filter(_.path.name != name)
+                                    log.info(s"Box office deletes the event $name")
+                                    sender ! EventDeleted(name)
 
         case TicketRequest(name, tickets)  =>   var ticketSellerRef = ticketSellers.find(_.path.name == name)
                                                 if(ticketSellerRef.isDefined)

@@ -187,3 +187,106 @@
 2021-03-30 14:15:13.510UTC INFO [EventsRouter-akka.actor.default-dispatcher-12] BoxOfficeActor - Box office asks ticket seller to buy 10 tickets
 2021-03-30 14:15:13.518UTC INFO [EventsRouter-akka.actor.default-dispatcher-11] TicketSellerActor - Ticket seller sends 10
 2021-03-30 14:15:13.527UTC INFO [EventsRouter-akka.actor.default-dispatcher-12] RestApiActor - RestAPI receives Map(event -> RHCP, entries -> Vector(Map(id -> 1), Map(id -> 2), Map(id -> 3), Map(id -> 4), Map(id -> 5), Map(id -> 6), Map(id -> 7), Map(id -> 8), Map(id -> 9), Map(id -> 10)))
+2021-03-30  INFO [EventsRouter-akka.actor.default-dispatcher-4] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-03-30 14:31:35.233UTC INFO [EventsRouter-akka.actor.default-dispatcher-5] a.a.ActorSystemImpl - Server ###online}:127.0.0.1/ WARNING arguments left: 1
+2021-03-30 14:31:57.266UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - RestAPI asks box office to create the event RHCP (2500)
+2021-03-30 14:31:57.268UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] BoxOfficeActor - Box office creates an event RHCP (2500)
+2021-03-30 14:32:00.430UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] RestApiActor - RestAPI asks box office to buy 10 tickets for RHCP
+2021-03-30 14:32:00.432UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - SENDER: Actor[akka://EventsRouter/temp/$a$a]!!!
+2021-03-30 14:32:00.433UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] BoxOfficeActor - Box office asks ticket seller to buy 10 tickets
+2021-03-30 14:32:00.437UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] TicketSellerActor - Ticket seller sends 10
+2021-03-30 14:32:00.452UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] a.a.DeadLetterActorRef - Message [TicketVectors] from Actor[akka://EventsRouter/user/RHCP#787833664] to Actor[akka://EventsRouter/deadLetters] was not delivered. [1] dead letters encountered. If this is not an expected behavior then Actor[akka://EventsRouter/deadLetters] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2021-04-03  INFO [EventsRouter-akka.actor.default-dispatcher-6] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-04-03 15:56:07.828UTC INFO [EventsRouter-akka.actor.default-dispatcher-6] a.a.ActorSystemImpl - Server ###online}:127.0.0.1/ WARNING arguments left: 1
+2021-04-03 16:03:08.105UTC INFO [EventsRouter-akka.actor.default-dispatcher-12] RestApiActor - RestAPI asks box office to create the event RHCP (3000)
+2021-04-03 16:03:08.110UTC INFO [EventsRouter-akka.actor.default-dispatcher-13] BoxOfficeActor - Box office creates an event RHCP (3000)
+2021-04-03 16:04:52.600UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] RestApiActor - RestAPI asks box office to buy 10 tickets for RHCP
+2021-04-03 16:04:52.602UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] RestApiActor - SENDER: Actor[akka://EventsRouter/temp/$a$a]!!!
+2021-04-03 16:04:52.602UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] BoxOfficeActor - Box office asks ticket seller to buy 10 tickets
+2021-04-03 16:04:52.610UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] TicketSellerActor - Ticket seller sends 10
+2021-04-03 16:04:52.614UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] a.a.DeadLetterActorRef - Message [TicketVectors] from Actor[akka://EventsRouter/user/RHCP#-947293310] to Actor[akka://EventsRouter/deadLetters] was not delivered. [1] dead letters encountered. If this is not an expected behavior then Actor[akka://EventsRouter/deadLetters] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2021-04-03 16:05:16.095UTC INFO [EventsRouter-akka.actor.default-dispatcher-15] RestApiActor - RestAPI asks box office to buy 10 tickets for RHCP
+2021-04-03 16:05:16.095UTC INFO [EventsRouter-akka.actor.default-dispatcher-15] RestApiActor - SENDER: Actor[akka://EventsRouter/temp/$a$b]!!!
+2021-04-03 16:05:16.095UTC INFO [EventsRouter-akka.actor.default-dispatcher-15] BoxOfficeActor - Box office asks ticket seller to buy 10 tickets
+2021-04-03 16:05:16.095UTC INFO [EventsRouter-akka.actor.default-dispatcher-15] TicketSellerActor - Ticket seller sends 10
+2021-04-03 16:05:16.095UTC INFO [EventsRouter-akka.actor.default-dispatcher-15] a.a.DeadLetterActorRef - Message [TicketVectors] from Actor[akka://EventsRouter/user/RHCP#-947293310] to Actor[akka://EventsRouter/deadLetters] was not delivered. [2] dead letters encountered. If this is not an expected behavior then Actor[akka://EventsRouter/deadLetters] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2021-04-03  INFO [EventsRouter-akka.actor.default-dispatcher-6] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-04-03 16:05:47.538UTC INFO [EventsRouter-akka.actor.default-dispatcher-7] a.a.ActorSystemImpl - Server ###online}:127.0.0.1/ WARNING arguments left: 1
+2021-04-03 16:05:48.627UTC INFO [EventsRouter-akka.actor.default-dispatcher-7] RestApiActor - RestAPI asks box office to buy 10 tickets for RHCP
+2021-04-03 16:05:48.628UTC INFO [EventsRouter-akka.actor.default-dispatcher-7] RestApiActor - SENDER: Actor[akka://EventsRouter/temp/$a$a]!!!
+2021-04-03 16:05:55.287UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] RestApiActor - RestAPI asks box office to create the event RHCP (3000)
+2021-04-03 16:05:55.290UTC INFO [EventsRouter-akka.actor.default-dispatcher-10] BoxOfficeActor - Box office creates an event RHCP (3000)
+2021-04-03 16:06:35.280UTC INFO [EventsRouter-akka.actor.default-dispatcher-7] RestApiActor - RestAPI asks box office to buy 10 tickets for RHCP
+2021-04-03 16:06:35.280UTC INFO [EventsRouter-akka.actor.default-dispatcher-7] RestApiActor - SENDER: Actor[akka://EventsRouter/temp/$a$b]!!!
+2021-04-03 16:06:35.280UTC INFO [EventsRouter-akka.actor.default-dispatcher-7] BoxOfficeActor - Box office asks ticket seller to buy 10 tickets
+2021-04-03 16:06:35.284UTC INFO [EventsRouter-akka.actor.default-dispatcher-7] TicketSellerActor - Ticket seller sends 10
+2021-04-03 16:06:35.288UTC INFO [EventsRouter-akka.actor.default-dispatcher-7] RestApiActor - RestAPI receives Map(event -> RHCP, entries -> Vector(Map(id -> 1), Map(id -> 2), Map(id -> 3), Map(id -> 4), Map(id -> 5), Map(id -> 6), Map(id -> 7), Map(id -> 8), Map(id -> 9), Map(id -> 10)))
+2021-04-03  INFO [EventsRouter-akka.actor.default-dispatcher-4] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-04-03 16:31:26.694UTC INFO [EventsRouter-akka.actor.default-dispatcher-4] RestApiActor - RestAPI asks box office to create the event RHCP (2500)
+2021-04-03 16:31:26.725UTC INFO [EventsRouter-akka.actor.default-dispatcher-5] BoxOfficeActor - Box office creates an event RHCP (2500)
+2021-04-03  INFO [EventsRouter-akka.actor.default-dispatcher-5] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-04-03 16:32:31.337UTC INFO [EventsRouter-akka.actor.default-dispatcher-6] RestApiActor - RestAPI asks box office to create the event RHCP (2500)
+2021-04-03 16:32:31.344UTC INFO [EventsRouter-akka.actor.default-dispatcher-5] BoxOfficeActor - Box office creates an event RHCP (2500)
+2021-04-03 16:32:32.092UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] a.a.ActorSystemImpl - Server ###online}:127.0.0.1/ WARNING arguments left: 1
+2021-04-03 16:37:33.353UTC INFO [EventsRouter-akka.actor.default-dispatcher-11] RestApiActor - RestAPI asks box office to create the event Daft Punk (3000)
+2021-04-03  INFO [EventsRouter-akka.actor.default-dispatcher-4] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-04-03 16:46:11.540UTC INFO [EventsRouter-akka.actor.default-dispatcher-4] a.a.ActorSystemImpl - Server ###online}:127.0.0.1/ WARNING arguments left: 1
+2021-04-03 16:46:20.899UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - RestAPI asks box office to create the event Daft Punk (3000)
+2021-04-03 16:46:28.322UTC INFO [EventsRouter-akka.actor.default-dispatcher-5] RestApiActor - RestAPI asks box office to create the event RHCP (3000)
+2021-04-03 16:46:28.323UTC INFO [EventsRouter-akka.actor.default-dispatcher-5] BoxOfficeActor - Box office creates an event RHCP (3000)
+2021-04-03 16:47:06.329UTC INFO [EventsRouter-akka.actor.default-dispatcher-5] RestApiActor - RestAPI asks box office to create the event BEATLES (3000)
+2021-04-03 16:47:06.329UTC INFO [EventsRouter-akka.actor.default-dispatcher-5] BoxOfficeActor - Box office creates an event BEATLES (3000)
+2021-04-03  INFO [EventsRouter-akka.actor.default-dispatcher-4] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-04-03 16:57:34.162UTC INFO [EventsRouter-akka.actor.default-dispatcher-4] a.a.ActorSystemImpl - Server ###online}:127.0.0.1/ WARNING arguments left: 1
+2021-04-03 16:57:45.686UTC INFO [EventsRouter-akka.actor.default-dispatcher-4] RestApiActor - RestAPI asks box office to create the event RHCP (3000)
+2021-04-03 16:57:45.689UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] BoxOfficeActor - Box office creates an event RHCP (3000)
+2021-04-03 16:57:45.696UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] RestApiActor - RestAPI acknoledges the event creation
+2021-04-03 16:58:01.418UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - RestAPI asks box office to create the event Eminem (3000)
+2021-04-03 16:58:01.419UTC INFO [EventsRouter-akka.actor.default-dispatcher-11] BoxOfficeActor - Box office creates an event Eminem (3000)
+2021-04-03 16:58:01.420UTC INFO [EventsRouter-akka.actor.default-dispatcher-11] RestApiActor - RestAPI acknoledges the event creation
+2021-04-03 16:58:07.502UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - RestAPI asks box office about all available events
+2021-04-03 16:58:15.338UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - RestAPI asks box office to buy 10 tickets for RHCP
+2021-04-03 16:58:15.338UTC INFO [EventsRouter-akka.actor.default-dispatcher-11] BoxOfficeActor - Box office asks ticket seller to buy 10 tickets
+2021-04-03 16:58:15.341UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] TicketSellerActor - Ticket seller sends 10
+2021-04-03 16:58:15.343UTC INFO [EventsRouter-akka.actor.default-dispatcher-11] RestApiActor - RestAPI receives Map(event -> RHCP, entries -> Vector(Map(id -> 1), Map(id -> 2), Map(id -> 3), Map(id -> 4), Map(id -> 5), Map(id -> 6), Map(id -> 7), Map(id -> 8), Map(id -> 9), Map(id -> 10)))
+2021-04-03 16:58:18.780UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - RestAPI asks box office to buy 10 tickets for RHCP
+2021-04-03 16:58:18.780UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] BoxOfficeActor - Box office asks ticket seller to buy 10 tickets
+2021-04-03 16:58:18.781UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] TicketSellerActor - Ticket seller sends 10
+2021-04-03 16:58:18.781UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - RestAPI receives Map(event -> RHCP, entries -> Vector(Map(id -> 11), Map(id -> 12), Map(id -> 13), Map(id -> 14), Map(id -> 15), Map(id -> 16), Map(id -> 17), Map(id -> 18), Map(id -> 19), Map(id -> 20)))
+2021-04-03  INFO [EventsRouter-akka.actor.default-dispatcher-6] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-04-03 17:28:01.050UTC INFO [EventsRouter-akka.actor.default-dispatcher-7] a.a.ActorSystemImpl - Server ###online}:127.0.0.1/ WARNING arguments left: 1
+2021-04-03 17:28:45.392UTC INFO [EventsRouter-akka.actor.default-dispatcher-6] RestApiActor - RestAPI asks box office to create the event RHCP (3000)
+2021-04-03 17:28:45.394UTC INFO [EventsRouter-akka.actor.default-dispatcher-11] BoxOfficeActor - Box office creates an event RHCP (3000)
+2021-04-03 17:28:45.396UTC INFO [EventsRouter-akka.actor.default-dispatcher-11] RestApiActor - RestAPI acknowledges the event creation
+2021-04-03 17:29:00.410UTC INFO [EventsRouter-akka.actor.default-dispatcher-13] RestApiActor - RestAPI asks box office to create the event Eminem (3000)
+2021-04-03 17:29:00.410UTC INFO [EventsRouter-akka.actor.default-dispatcher-13] BoxOfficeActor - Box office creates an event Eminem (3000)
+2021-04-03 17:29:00.410UTC INFO [EventsRouter-akka.actor.default-dispatcher-13] RestApiActor - RestAPI acknowledges the event creation
+2021-04-03 17:30:28.818UTC INFO [EventsRouter-akka.actor.default-dispatcher-10] RestApiActor - RestAPI asks box office to create the event Eminem (3000)
+2021-04-03 17:30:42.059UTC INFO [EventsRouter-akka.actor.default-dispatcher-6] RestApiActor - RestAPI asks box office about all available events
+2021-04-03 17:30:55.739UTC INFO [EventsRouter-akka.actor.default-dispatcher-10] RestApiActor - RestAPI asks box office about all available events
+2021-04-03 17:31:16.435UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] RestApiActor - RestAPI asks box office to create the event RHCP (3000)
+2021-04-03 17:31:27.840UTC INFO [EventsRouter-akka.actor.default-dispatcher-6] RestApiActor - RestAPI asks box office to create the event Rihanna (3000)
+2021-04-03 17:31:27.841UTC INFO [EventsRouter-akka.actor.default-dispatcher-6] BoxOfficeActor - Box office creates an event Rihanna (3000)
+2021-04-03 17:31:27.841UTC INFO [EventsRouter-akka.actor.default-dispatcher-6] RestApiActor - RestAPI acknowledges the event creation
+2021-04-03 17:31:31.150UTC INFO [EventsRouter-akka.actor.default-dispatcher-6] RestApiActor - RestAPI asks box office about all available events
+2021-04-03 17:31:48.489UTC INFO [EventsRouter-akka.actor.default-dispatcher-12] RestApiActor - RestAPI asks box office to remove the event Rihanna
+2021-04-03 17:31:48.489UTC INFO [EventsRouter-akka.actor.default-dispatcher-12] BoxOfficeActor - Box office deletes the event Rihanna
+2021-04-03 17:31:48.489UTC INFO [EventsRouter-akka.actor.default-dispatcher-12] RestApiActor - RestAPI acknowledges the event deletion
+2021-04-03 17:31:51.649UTC INFO [EventsRouter-akka.actor.default-dispatcher-11] RestApiActor - RestAPI asks box office about all available events
+2021-04-03  INFO [EventsRouter-akka.actor.default-dispatcher-6] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-04-03 17:34:21.462UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] a.a.ActorSystemImpl - Server ###online}:127.0.0.1/ WARNING arguments left: 1
+2021-04-03 17:35:06.827UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - RestAPI asks box office to create the event RHCP (3000)
+2021-04-03 17:35:06.829UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] BoxOfficeActor - Box office creates an event RHCP (3000)
+2021-04-03 17:35:06.832UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - RestAPI acknowledges the event creation
+2021-04-03 17:35:10.489UTC INFO [EventsRouter-akka.actor.default-dispatcher-13] RestApiActor - RestAPI asks box office about all available events
+2021-04-03  INFO [EventsRouter-akka.actor.default-dispatcher-4] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-04-03 17:36:29.070UTC INFO [EventsRouter-akka.actor.default-dispatcher-5] a.a.ActorSystemImpl - Server ###online}:127.0.0.1/ WARNING arguments left: 1
+2021-04-03 17:36:38.762UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - RestAPI asks box office to create the event RHCP (3000)
+2021-04-03 17:36:38.765UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] BoxOfficeActor - Box office creates an event RHCP (3000)
+2021-04-03 17:36:38.766UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] RestApiActor - RestAPI acknowledges the event creation
+2021-04-03 17:36:41.917UTC INFO [EventsRouter-akka.actor.default-dispatcher-5] RestApiActor - RestAPI asks box office about all available events
+2021-04-03  INFO [EventsRouter-akka.actor.default-dispatcher-5] a.e.s.Slf4jLogger - Slf4jLogger started
+2021-04-03 17:38:40.354UTC INFO [EventsRouter-akka.actor.default-dispatcher-6] a.a.ActorSystemImpl - Server ###online}:127.0.0.1/ WARNING arguments left: 1
+2021-04-03 17:38:50.167UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] RestApiActor - RestAPI asks box office to create the event RHCP (3000)
+2021-04-03 17:38:50.170UTC INFO [EventsRouter-akka.actor.default-dispatcher-8] BoxOfficeActor - Box office creates an event RHCP (3000)
+2021-04-03 17:38:50.171UTC INFO [EventsRouter-akka.actor.default-dispatcher-9] RestApiActor - RestAPI acknowledges the event creation

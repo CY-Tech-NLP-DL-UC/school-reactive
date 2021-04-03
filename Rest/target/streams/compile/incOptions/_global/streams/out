@@ -1,73 +1,14 @@
-[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/eisti/Documents/courses/reactive_coding/school-reactive/Rest/target/scala-2.13/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/eisti/EISTI/ING3/ProgReactive/school-reactive/Rest/target/scala-2.13/classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Buy$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	RestApiActor$$anonfun$receive$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketSellerActor.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	RestApiActor.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketVectors.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketSellerActor$$anonfun$receive$3.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	eventAPI$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Event$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	eventAPI$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketRequest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Ticket.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	CreateEvent.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	EventJsonSupport.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BoxOfficeActor$$anonfun$receive$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	eventAPI.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BoxOfficeActor.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketRequest$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketVectors$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Event.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Buy.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Ticket$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	CreateEvent$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	eventAPI$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Buy$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	RestApiActor$$anonfun$receive$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketSellerActor.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	RestApiActor.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketVectors.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketSellerActor$$anonfun$receive$3.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	eventAPI$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Event$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	eventAPI$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketRequest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Ticket.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	CreateEvent.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	EventJsonSupport.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BoxOfficeActor$$anonfun$receive$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	eventAPI.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BoxOfficeActor.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketRequest$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketVectors$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Event.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Buy.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Ticket$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	CreateEvent$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	eventAPI$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Buy$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	RestApiActor$$anonfun$receive$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketSellerActor.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	RestApiActor.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketVectors.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketSellerActor$$anonfun$receive$3.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	eventAPI$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Event$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	eventAPI$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketRequest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GetAllEvents$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Ticket.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	CreateEvent.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	EventJsonSupport.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BoxOfficeActor$$anonfun$receive$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GetAllEvents.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	eventAPI.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BoxOfficeActor.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketRequest$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TicketVectors$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Event.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Buy.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Ticket$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	CreateEvent$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/eisti/Documents/courses/reactive_coding/school-reactive/Rest/target/scala-2.13/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0m	eventAPI$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/eisti/EISTI/ING3/ProgReactive/school-reactive/Rest/target/scala-2.13/classes.bak[0m
