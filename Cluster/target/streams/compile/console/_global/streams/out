@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0m[0mdebug[0m] [0m[0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.4.4:compile for Scala 2.12.4[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.4.4:compile for Scala 2.12.4[0m
+[0m[[0m[0minfo[0m] [0m[0mStarting scala interpreter...[0m
+[0m[[0m[33mwarn[0m] [0m[0mRun canceled.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInterrupting thread Thread-1027[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Interrupted Thread-1027[0m
+[0m[[0m[0mdebug[0m] [0m[0mInterrupting thread Thread-1117[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Interrupted Thread-1117[0m
+[0mInterrupting thread Thread-2066[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Interrupted Thread-2066[0m

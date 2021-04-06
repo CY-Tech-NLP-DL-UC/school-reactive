@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/eisti/EISTI/ING3/ProgReactive/school-reactive/Cluster/src/main/scala/main.scala:45:26: Cluster.type does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m    val address = Cluster(seedSystem).selfAddress[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/eisti/EISTI/ING3/ProgReactive/school-reactive/Cluster/src/main/scala/main.scala:46:12: Cluster.type does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m    Cluster(seedSystem).leave(address)[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
